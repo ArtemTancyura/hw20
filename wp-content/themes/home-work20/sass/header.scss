@@ -1,0 +1,37 @@
+.site-header{
+  background-color: #111111;
+  background-size: cover;
+
+  .site-logo{
+    float: left;
+    padding: 25px 0;
+  }
+  .site-nav{
+    ul{
+      margin: 0;
+      padding: 0;
+      float: right;
+
+      li {
+        list-style: none;
+        float: left;
+        margin: 0;
+
+        a {
+          display: block;
+          padding: 25px 18px;
+          text-decoration: none;
+          color: #cccccc;
+        }
+        a:hover,
+        a:active{
+          color: white;
+        }
+      }
+     }
+    .site-nav ul:before, .site-nav ul:after{ content:""; display: table;}
+    .site-nav ul:after{ clear: both;}
+    .site-nav ul {*zoom: 1;}
+  }
+}
+

@@ -1,0 +1,84 @@
+/*
+Theme Name: Home Work 20
+Author: Artem Tancyura
+Description: The 2014 simplest theme for WordPress.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black
+Text Domain: simplest-site
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import "footer";
+@import "header";
+
+
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+body{
+  font-family: 'Proximanova', sans-serif;
+  font-size: 16px;
+  color: #333;
+
+  h2{
+    font-family: 'Nexabold', serif;
+    font-size: 48px;
+  }
+
+}
+.container {
+  max-width: 925px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  h2, .post-info {
+    text-align: center;
+  }
+  article {
+    padding-top: 80px;
+
+    .post {
+      p {
+        text-align: left;
+      }
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+  .more-link {
+    position: relative;
+    display: inline-block;
+    color: black;
+    margin-top: 30px;
+    text-decoration: none;
+    margin-left: 37px;
+  }
+  .more-link:hover {
+    color: #58c93a;
+  }
+  .more-link:after {
+    content: '';
+    background: url("img/Read_More_Icon.png") no-repeat 100%;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 105px;
+    top: -5px;
+  }
+}
+
+
+
+
+
+
