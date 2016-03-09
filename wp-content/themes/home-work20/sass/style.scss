@@ -23,6 +23,34 @@ Use it to make something cool, have fun, and share what you've learned with othe
   clear: both;
   visibility: hidden;
 }
+
+@media only screen and (min-width: 481px) and (max-width: 720px) {
+  .site-nav li{
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid white;
+  }
+  img{
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 481px){
+  .site-nav li{
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid white;
+  }
+  img{
+    max-width: 100%;
+  }
+}
+@media only screen and (min-width: 721px) and (max-width: 1024px) {
+
+  img{
+    max-width: 100%;
+  }
+}
+
 body{
   font-family: 'Proximanova', sans-serif;
   font-size: 16px;
@@ -30,6 +58,7 @@ body{
 
   h2{
     font-family: 'Nexabold', serif;
+    font-weight: bold;
     font-size: 48px;
   }
 
@@ -56,6 +85,7 @@ body{
     }
   }
   .more-link {
+    font-weight: bolder;
     position: relative;
     display: inline-block;
     color: black;
@@ -64,7 +94,7 @@ body{
     margin-left: 37px;
   }
   .more-link:hover {
-    color: #58c93a;
+    text-decoration: underline;
   }
   .more-link:after {
     content: '';
@@ -72,8 +102,11 @@ body{
     width: 25px;
     height: 25px;
     position: absolute;
-    right: 105px;
+    right: 110px;
     top: -5px;
+  }
+  .content{
+    border-bottom: 1px solid #999999;
   }
 }
 

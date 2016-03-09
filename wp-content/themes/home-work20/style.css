@@ -55,6 +55,24 @@ Use it to make something cool, have fun, and share what you've learned with othe
     position: absolute;
     margin-left: 395px;
     padding-top: 30px; }
+  @media only screen and (min-width: 481px) and (max-width: 720px) {
+    .site-footer .site-nav li {
+      display: block;
+      width: 100%;
+      border-bottom: 1px solid black; }
+    .site-footer img {
+      max-width: 100%; }
+    .site-footer .social {
+      float: left; }
+    .site-footer .fback-text {
+      float: left; } }
+  @media only screen and (max-width: 481px) {
+    .site-footer .site-nav li {
+      display: block;
+      width: 100%;
+      border-bottom: 1px solid black; }
+    .site-footer img {
+      max-width: 100%; } }
 
 .site-header {
   background-color: #111111;
@@ -93,12 +111,33 @@ Use it to make something cool, have fun, and share what you've learned with othe
   clear: both;
   visibility: hidden; }
 
+@media only screen and (min-width: 481px) and (max-width: 720px) {
+  .site-nav li {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid white; }
+  img {
+    max-width: 100%; } }
+
+@media only screen and (max-width: 481px) {
+  .site-nav li {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid white; }
+  img {
+    max-width: 100%; } }
+
+@media only screen and (min-width: 721px) and (max-width: 1024px) {
+  img {
+    max-width: 100%; } }
+
 body {
   font-family: 'Proximanova', sans-serif;
   font-size: 16px;
   color: #333; }
   body h2 {
     font-family: 'Nexabold', serif;
+    font-weight: bold;
     font-size: 48px; }
 
 .container {
@@ -115,6 +154,7 @@ body {
     .container article .post img {
       max-width: 100%; }
   .container .more-link {
+    font-weight: bolder;
     position: relative;
     display: inline-block;
     color: black;
@@ -122,12 +162,14 @@ body {
     text-decoration: none;
     margin-left: 37px; }
   .container .more-link:hover {
-    color: #58c93a; }
+    text-decoration: underline; }
   .container .more-link:after {
     content: '';
     background: url("img/Read_More_Icon.png") no-repeat 100%;
     width: 25px;
     height: 25px;
     position: absolute;
-    right: 105px;
+    right: 110px;
     top: -5px; }
+  .container .content {
+    border-bottom: 1px solid #999999; }
